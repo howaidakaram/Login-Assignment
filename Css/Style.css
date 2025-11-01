@@ -1,71 +1,88 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #24353f;
+  display: flex;
+  justify-content: center;
   
-  body {
-    background-color: #24353f;
-    display: flex;
-    justify-content: center;
-  
-  }
-  
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .login-box {
-    background-color: #24353f;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
-    text-align: center;
-    width: 320px;
-  }
-  
-  h2 {
-    color: #198b9f;
-    margin-bottom: 30px;
-    line-height: 1.2;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid white; 
-    border-radius: 4px;
-    background-color: transparent;
-    color: white;
-  }
- 
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  background-color: #24353f;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 350px;
+  transition: 0.5s;
+}
+
+h2 {
+  color: #1dbfc1;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+input::placeholder {
+  color: #c7c7c7;
+}
+
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: transparent;
-    color: #1dbfc1;
-    border: 1px solid #1dbfc1;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #1dbfc1;
-    color: #fff;
-  }
-  
-  a {
-    color:white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: #1dbfc1;
+  border: 1px solid #1dbfc1;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1dbfc1;
+  color: #fff;
+}
+
+p {
+  color: white;
+  margin-top: 20px;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
